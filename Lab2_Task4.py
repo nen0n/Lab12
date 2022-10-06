@@ -26,6 +26,7 @@ class Text:
         file.close()
         return words
 
+
     def Calculate_Senteces(self):
         try:
             file = open(self.text_file, "r")
@@ -34,6 +35,7 @@ class Text:
         sentences = sum(len(re.findall(r"[A-ZА-ЯЁІЇ][^\.!?]*[\.!?]+", lines)) for lines in file)
         file.close()
         return sentences
+
 
 
 text = Text("Text.txt")

@@ -110,13 +110,14 @@ class Group:
 
 def main():
     Zahar = Student("Zahar", "Abobenko", math=4, literature=5)
-    Alex = Student("Aleksandr", "Kalenskij", math=3, literature=3)
+    Alex = Student("Aleksandr", "Kalenskij", math=5, literature=5)
     Yevheniy = Student("Yevheniy", "Zdesenko", math=5, literature=3)
+    Danya = Student("Danilo", "Grishay", math=5, literature=4)
 
-    Alex.add_grade("economy", 4)
+    Alex.add_grade("economy", 5)
     Alex.change_grade("math", 2)
 
-    group = Group(Zahar, Yevheniy)
+    group = Group(Zahar, Yevheniy, Danya, )
 
     print("".join(map(str, group.best_students())))
 
