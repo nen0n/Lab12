@@ -48,6 +48,7 @@ class Order:
                 self.products_quantity[self.products.index(product)] -= 1
             else:
                 self.products.pop(self.products.index(product))
+                self.products_quantity.pop(self.products.index(product))
     def __Calculate_Order(self):
         self.money = 0
         for i in self.products:
